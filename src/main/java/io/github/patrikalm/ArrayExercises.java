@@ -8,7 +8,7 @@ public class ArrayExercises {
     public static void main(String[] args) {
 
 
-        exercise4();
+        exercise5();
 
     }
 
@@ -50,7 +50,7 @@ public class ArrayExercises {
 
     } */
 
-    public static void exercise4() {
+    /* public static void exercise4() {
 
         int [] firstArray = {1, 15, 20};
 
@@ -71,7 +71,23 @@ public class ArrayExercises {
         }
         System.out.println();
 
+    } */
+
+    public static void exercise5() {
+
+        String [][] geoArray = new String[2][2];
+
+        geoArray [0][0] = "France";
+        geoArray [0][1] = "Sweden";
+        geoArray [1][0] = "Paris";
+        geoArray [1][1] = "Stockholm";
+
+        System.out.println(geoArray[0][0] + " " + geoArray[1][0]);
+        System.out.println(geoArray[0][1] + " " + geoArray[1][1]);
+
     }
+
+
 }
 
 
