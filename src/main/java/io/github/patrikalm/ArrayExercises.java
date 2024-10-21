@@ -9,7 +9,7 @@ public class ArrayExercises {
     public static void main(String[] args) {
 
 
-        exercise7();
+        exercise8();
 
     }
 
@@ -106,7 +106,7 @@ public class ArrayExercises {
     } */
 
 
-        public static void exercise7() {
+       /*  public static void exercise7() {
 
             int [] numbers = {1, 2, 4, 7, 9, 12};
 
@@ -126,12 +126,42 @@ public class ArrayExercises {
 
                     System.out.print(element + " ");
                 }
+            } */
+
+        public static void exercise8() {
+
+            int [] duplicatedArray = {20, 20, 40, 20, 30, 40, 50, 60, 50};
+
+            System.out.print("Array: ");
+            printArray(duplicatedArray);
+
+            for (int i = 0; i < duplicatedArray.length; i++) {
+
+                for (int j = i+1; j < duplicatedArray.length; j++) {
+
+                    if (duplicatedArray[i] == duplicatedArray[j]) {
+
+                            duplicatedArray[j] = 0;
+                    }
+                }
             }
 
-
+            System.out.print("Odd Array: ");
+            printArray(duplicatedArray);
         }
 
+    public static void printArray(int [] arrayToPrint) {
 
+        for (int number : arrayToPrint) {
+
+            if (number != 0) {
+
+                System.out.print(number + " ");
+
+            }
+        }
+        System.out.println();
+    }
 }
 
 
