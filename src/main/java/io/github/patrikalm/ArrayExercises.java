@@ -1,11 +1,13 @@
 package io.github.patrikalm;
 
 
+import java.util.Arrays;
+
 public class ArrayExercises {
 
     public static void main(String[] args) {
 
-        indexOf();
+        sortString();
 
     }
 
@@ -20,7 +22,7 @@ public class ArrayExercises {
         }
     } */
 
-    public static void indexOf() {
+   /* public static void indexOf() {
 
         int[] numbers = {2, 3, 5};
 
@@ -34,7 +36,19 @@ public class ArrayExercises {
 
             }
         }
+    } */
+
+public static void sortString() {
+
+    String [] cities = {"Paris", "London", "New York", "Stockholm"};
+
+    Arrays.sort(cities);
+
+    System.out.println(Arrays.toString(cities));
+
+
     }
 
 }
+
 
