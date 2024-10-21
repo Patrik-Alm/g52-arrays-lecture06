@@ -9,7 +9,7 @@ public class ArrayExercises {
     public static void main(String[] args) {
 
 
-        exercise8();
+        exercise9();
 
     }
 
@@ -128,7 +128,7 @@ public class ArrayExercises {
                 }
             } */
 
-        public static void exercise8() {
+       /* public static void exercise8() {
 
             int [] duplicatedArray = {20, 20, 40, 20, 30, 40, 50, 60, 50};
 
@@ -161,7 +161,35 @@ public class ArrayExercises {
             }
         }
         System.out.println();
+    } */
+
+    public static void exercise9() {
+
+        double [] numbers = {1.3, 2.7, 4.9, 1.7};
+
+        double [] numbersToAdd = {2.3, 5.5, 8.9};
+
+        System.out.println();
+        System.out.print("Existing numbers: ");
+        System.out.println(Arrays.toString(numbers));
+
+        System.out.print("Numbers to add: ");
+        System.out.println(Arrays.toString(numbersToAdd));
+
+        double [] newNumbersArray = Arrays.copyOf(numbers, numbers.length + numbersToAdd.length);
+
+        for (int i = 0; i < numbersToAdd.length; i++) {
+
+            newNumbersArray [i + numbers.length] = numbersToAdd[i];
+        }
+
+        System.out.println();
+        System.out.print("New number array: ");
+        System.out.println(Arrays.toString(newNumbersArray));
+
     }
+
+
 }
 
 
