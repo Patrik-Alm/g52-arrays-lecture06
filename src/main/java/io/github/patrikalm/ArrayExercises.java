@@ -9,7 +9,7 @@ public class ArrayExercises {
     public static void main(String[] args) {
 
 
-        exercise9();
+        multiplicationTable();
 
     }
 
@@ -163,7 +163,7 @@ public class ArrayExercises {
         System.out.println();
     } */
 
-    public static void exercise9() {
+   /* public static void exercise9() {
 
         double [] numbers = {1.3, 2.7, 4.9, 1.7};
 
@@ -187,9 +187,34 @@ public class ArrayExercises {
         System.out.print("New number array: ");
         System.out.println(Arrays.toString(newNumbersArray));
 
-    }
+    } */
 
+        public static void multiplicationTable() {
 
+            int[] multiplicationRow = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+            int[] multiplicationColumn = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+            int[][] multiplicationTable = new int[multiplicationColumn.length][multiplicationRow.length];
+
+            for (int i = 0; i < multiplicationColumn.length; i++) {
+
+                for (int j = 0; j < multiplicationRow.length; j++) {
+
+                    multiplicationTable[i][j] = multiplicationColumn[i] * multiplicationRow[j];
+
+                }
+            }
+            System.out.println();
+
+            for (int i = 0; i < multiplicationTable.length; i++) {
+
+                for (int j = 0; j < multiplicationTable.length; j++) {
+
+                    System.out.print(multiplicationTable [i] [j] + "\t");
+                }
+                System.out.println();
+            }
+        }
 }
 
 
