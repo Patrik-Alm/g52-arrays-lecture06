@@ -7,7 +7,8 @@ public class ArrayExercises {
 
     public static void main(String[] args) {
 
-        sortString();
+
+        exercise4();
 
     }
 
@@ -38,7 +39,7 @@ public class ArrayExercises {
         }
     } */
 
-public static void sortString() {
+/*public static void sortString() {
 
     String [] cities = {"Paris", "London", "New York", "Stockholm"};
 
@@ -47,8 +48,30 @@ public static void sortString() {
     System.out.println(Arrays.toString(cities));
 
 
+    } */
+
+    public static void exercise4() {
+
+        int [] firstArray = {1, 15, 20};
+
+        int [] secondArray = Arrays.copyOf(firstArray, firstArray.length);
+
+        System.out.print("Elements from first array: ");
+        printArray(firstArray);
+
+        System.out.print("Elements from second array: ");
+        printArray(secondArray);
     }
 
+    public static void printArray(int [] arrayToPrint) {
+
+        for (int letter : arrayToPrint) {
+
+            System.out.print(letter + " ");
+        }
+        System.out.println();
+
+    }
 }
 
 
