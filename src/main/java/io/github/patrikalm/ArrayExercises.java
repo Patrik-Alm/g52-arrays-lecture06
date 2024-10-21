@@ -9,7 +9,7 @@ public class ArrayExercises {
     public static void main(String[] args) {
 
 
-        exercise6();
+        exercise7();
 
     }
 
@@ -88,7 +88,7 @@ public class ArrayExercises {
 
     } */
 
-    public static void exercise6() {
+   /* public static void exercise6() {
 
         int [] values = {43, 5, 23, 17, 2, 14};
         double sum =0;
@@ -103,9 +103,33 @@ public class ArrayExercises {
 
         System.out.println("Average is: " + df.format(sum/ values.length));
 
-    }
+    } */
 
 
+        public static void exercise7() {
+
+            int [] numbers = {1, 2, 4, 7, 9, 12};
+
+            System.out.print("Array: ");
+
+            for (int element : numbers) {
+
+                System.out.print(element + " ");
+            }
+
+            System.out.println();
+            System.out.print("Odd array: ");
+
+            for (int element : numbers) {
+
+                if (element % 2 != 0) {
+
+                    System.out.print(element + " ");
+                }
+            }
+
+
+        }
 
 
 }
