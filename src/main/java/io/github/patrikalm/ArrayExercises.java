@@ -1,6 +1,7 @@
 package io.github.patrikalm;
 
 
+import java.text.DecimalFormat;
 import java.util.Arrays;
 
 public class ArrayExercises {
@@ -8,7 +9,7 @@ public class ArrayExercises {
     public static void main(String[] args) {
 
 
-        exercise5();
+        exercise6();
 
     }
 
@@ -73,7 +74,7 @@ public class ArrayExercises {
 
     } */
 
-    public static void exercise5() {
+    /* public static void exercise5() {
 
         String [][] geoArray = new String[2][2];
 
@@ -85,7 +86,26 @@ public class ArrayExercises {
         System.out.println(geoArray[0][0] + " " + geoArray[1][0]);
         System.out.println(geoArray[0][1] + " " + geoArray[1][1]);
 
+    } */
+
+    public static void exercise6() {
+
+        int [] values = {43, 5, 23, 17, 2, 14};
+        double sum =0;
+
+        for (int element : values) {
+
+            sum = sum + element;
+
+        }
+
+        DecimalFormat df = new DecimalFormat("#.#");
+
+        System.out.println("Average is: " + df.format(sum/ values.length));
+
     }
+
+
 
 
 }
