@@ -12,7 +12,7 @@ public class ArrayExercises {
     public static void main(String[] args) {
 
 
-        exercise11();
+        exercise13();
 
     }
 
@@ -220,7 +220,7 @@ public class ArrayExercises {
          } */
 
 
-        public static void exercise11() {
+      /*  public static void exercise11() {
 
             System.out.println();
             System.out.println("Enter a number to put in the array. To end enter 0: ");
@@ -278,7 +278,7 @@ public class ArrayExercises {
             System.out.println();
             System.out.print("Here comes the string in reverse order: ");
             System.out.println(numbers.toString());
-        }
+        } */
 
 
 
@@ -295,11 +295,45 @@ public class ArrayExercises {
     } */
 
 
-   public static void exercise13() {
+    public static void exercise13() {
 
+        int[] randomArray = {1, 5, 6, 8, 4, 44, 61, 50, 80, 7, 6};
+        int[] numbersOrdered = new int[randomArray.length];
+        int counterLeft = 0;
+        int counterRight = randomArray.length - 1;
 
+            for (int i = 0; i < randomArray.length; i++) {
 
-   }
+                if (randomArray[i] % 2 == 0) {
+
+                    numbersOrdered[counterLeft] = randomArray[i];
+                    counterLeft++;
+                }
+            }
+
+            for (int i = 0; i < randomArray.length; i++) {
+
+                if (randomArray[i] % 2 > 0) {
+                    numbersOrdered[counterRight] = randomArray[i];
+                    counterRight--;
+                }
+            }
+            System.out.println();
+            System.out.print("Here is the array with random numbers: ");
+
+            for (int i = 0; i < randomArray.length; i++) {
+                System.out.print(randomArray[i] + " ");
+            }
+            System.out.println();
+
+            System.out.print("Here is the ordered number array: ");
+
+            for (int i = 0; i < numbersOrdered.length; i++) {
+                System.out.print(numbersOrdered[i] + " ");
+            }
+            System.out.println();
+
+    }
 }
 
 
