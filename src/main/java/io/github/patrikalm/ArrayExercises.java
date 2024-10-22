@@ -12,7 +12,7 @@ public class ArrayExercises {
     public static void main(String[] args) {
 
 
-        exercise11();
+        exercise12();
 
     }
 
@@ -220,7 +220,7 @@ public class ArrayExercises {
          } */
 
 
-        public static void exercise11() {
+       /* public static void exercise11() {
 
             System.out.println();
             System.out.println("Enter a number to put in the array. To end enter 0: ");
@@ -271,9 +271,19 @@ public class ArrayExercises {
                 proxyNumbers.clear();
 
             System.out.println(numbers.toString());
+        } */
+
+    public static void exercise12() {
+
+        int [] [] numberTable = { {1, 2, 3}, {2, 4, 6}, {3, 6, 9}};
+
+        for (int i=0 ; i < numberTable.length; i++) {
+
+            System.out.print(numberTable[i] [i] + " ");
         }
 
 
+    }
 
 }
 
