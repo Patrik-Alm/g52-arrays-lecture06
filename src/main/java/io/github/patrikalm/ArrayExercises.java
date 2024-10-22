@@ -268,6 +268,7 @@ public class ArrayExercises {
                     numbers.add(proxyNumbers.get(i));
                 }
 
+                proxyNumbers.clear();
 
             System.out.println(numbers.toString());
         }
