@@ -2,14 +2,17 @@ package io.github.patrikalm;
 
 
 import java.text.DecimalFormat;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.Scanner;
 
 public class ArrayExercises {
 
     public static void main(String[] args) {
 
 
-        multiplicationTable();
+        exercise11();
 
     }
 
@@ -189,7 +192,7 @@ public class ArrayExercises {
 
     } */
 
-        public static void multiplicationTable() {
+      /*  public static void multiplicationTable() {
 
             int[] multiplicationRow = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
             int[] multiplicationColumn = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
@@ -214,7 +217,63 @@ public class ArrayExercises {
                 }
                 System.out.println();
             }
+         } */
+
+
+        public static void exercise11() {
+
+            System.out.println();
+            System.out.println("Enter a number to put in the array. To end enter 0: ");
+            System.out.println();
+
+            int counter = 0;
+            int number;
+            ArrayList<Integer> numbers = new ArrayList<>();
+
+            boolean toContinue = true;
+
+            Scanner input = new Scanner(System.in);
+
+            while (toContinue) {
+
+                number = input.nextInt();
+
+                if (number != 0) {
+
+                    numbers.add(number);
+
+                }
+                else {
+
+                    toContinue = false;
+
+                }
+
+
+            }
+            ArrayList<Integer> proxyNumbers = new ArrayList<>();
+
+
+
+            for (int i = numbers.size(); i > 0; i--) {
+
+                proxyNumbers.add(numbers.get(i-1));
+                counter++;
+
+            }
+                numbers.clear();
+
+                for (int i = 0; i < proxyNumbers.size(); i++) {
+
+                    numbers.add(proxyNumbers.get(i));
+                }
+
+
+            System.out.println(numbers.toString());
         }
+
+
+
 }
 
 
