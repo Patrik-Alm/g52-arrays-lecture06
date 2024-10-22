@@ -12,7 +12,7 @@ public class ArrayExercises {
     public static void main(String[] args) {
 
 
-        exercise12();
+        exercise11();
 
     }
 
@@ -220,7 +220,7 @@ public class ArrayExercises {
          } */
 
 
-       /* public static void exercise11() {
+        public static void exercise11() {
 
             System.out.println();
             System.out.println("Enter a number to put in the array. To end enter 0: ");
@@ -251,6 +251,11 @@ public class ArrayExercises {
 
 
             }
+
+            System.out.println();
+            System.out.print("Here comes the string you typed in: ");
+            System.out.println(numbers.toString());
+
             ArrayList<Integer> proxyNumbers = new ArrayList<>();
 
 
@@ -270,10 +275,14 @@ public class ArrayExercises {
 
                 proxyNumbers.clear();
 
+            System.out.println();
+            System.out.print("Here comes the string in reverse order: ");
             System.out.println(numbers.toString());
-        } */
+        }
 
-    public static void exercise12() {
+
+
+    /*  public static void exercise12() {
 
         int [] [] numberTable = { {1, 2, 3}, {2, 4, 6}, {3, 6, 9}};
 
@@ -283,8 +292,14 @@ public class ArrayExercises {
         }
 
 
-    }
+    } */
 
+
+   public static void exercise13() {
+
+
+
+   }
 }
 
 
